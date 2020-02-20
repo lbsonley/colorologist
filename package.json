@@ -1,0 +1,53 @@
+{
+  "name": "colorology",
+  "version": "0.0.1",
+  "description": "Utility for converting colors between hex, rba and hsl",
+  "main": "lib/index.js",
+  "scripts": {
+    "prettier": "prettier --write \"lib/**/*.js\"",
+    "test": "jest lib",
+    "docs": "node scripts/generate-docs"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test && pretty-quick --staged"
+    }
+  },
+  "keywords": [
+    "hex",
+    "rgb",
+    "hsl",
+    "colors",
+    "converter"
+  ],
+  "author": {
+    "name": "Ben Sonley",
+    "email": "lbsonley@gmail.com",
+    "url": "bensonley.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lbsonley/color-converter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lbsonley/color-converter/issues"
+  },
+  "homepage": "https://github.com/lbsonley/color-converter#readme",
+  "engines": {
+    "node": ">=8"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "7.8.4",
+    "@babel/preset-env": "7.8.4",
+    "babel-jest": "25.1.0",
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "6.10.0",
+    "eslint-plugin-prettier": "3.1.2",
+    "husky": "4.2.3",
+    "jest": "25.1.0",
+    "jsdoc-to-markdown": "5.0.3",
+    "prettier": "1.19.1",
+    "pretty-quick": "2.0.1"
+  }
+}
